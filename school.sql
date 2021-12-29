@@ -1,17 +1,4 @@
-/*
-Navicat MySQL Data Transfer
 
-Source Server         : 本地
-Source Server Version : 50717
-Source Host           : 127.0.0.1:3306
-Source Database       : school
-
-Target Server Type    : MYSQL
-Target Server Version : 50717
-File Encoding         : 65001
-
-Date: 2021-01-07 10:40:34
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -33,11 +20,9 @@ CREATE TABLE `student` (
 -- ----------------------------
 -- Records of student
 -- ----------------------------
-INSERT INTO `student` VALUES ('1', '张三', '男', '15', '陕西', '12345', 'zhangsan@itcast.cn');
-INSERT INTO `student` VALUES ('2', '李四', '女', '15', '北京', '88888', 'ls@itcast.cn');
-INSERT INTO `student` VALUES ('4', '1', '男', '1', '陕西', '1212131', '1212131@123.com');
-INSERT INTO `student` VALUES ('5', '2', '男', '2', '陕西', '2222', '2222@132.com');
-INSERT INTO `student` VALUES ('6', 'ee', '男', '23', '陕西', '12312', '12312@123.com');
+INSERT INTO `student` VALUES ('1', '程晨', '男', '20', '河南', '2710026312', '2710026312@qq.com');
+INSERT INTO `student` VALUES ('2', '邱智涵', '男', '20', '四川', '331927834', 'akisamu0901@gmail.com');
+INSERT INTO `student` VALUES ('4', '王伟', '男', '20', '江西', '1442599586', '1442599586@qq.com');
 
 -- ----------------------------
 -- Table structure for user
@@ -53,10 +38,6 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'zhangsan', '123456');
-INSERT INTO `user` VALUES ('2', 'lisi', 'aaaaaa');
-INSERT INTO `user` VALUES ('7', 'zhaoliu', '123456');
-INSERT INTO `user` VALUES ('8', 'wangwu', '123456');
-INSERT INTO `user` VALUES ('9', '小明', '123');
-INSERT INTO `user` VALUES ('10', 'admin', 'admin');
-INSERT INTO `user` VALUES ('11', 'test', '123456');
+INSERT INTO `user` VALUES ('1', 'admin', 'admin');
+
+

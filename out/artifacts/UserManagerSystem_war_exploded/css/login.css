@@ -1,0 +1,40 @@
+h3 {
+    text-align: center;
+    letter-spacing: 16px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+#main {
+    width: 800px;
+    margin-top: 100px;
+}
+
+#cap {
+    text-align: center;
+    margin-top: 20px;
+}
+#cap img {
+    margin-left: 10px;
+}
+
+#button-group {
+    text-align: center;
+}
+#button-group input {
+    width: 100%;
+}
+#button-group a {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#alert {
+    text-align: center;
+}
+#alert strong {
+    margin-top: 50px;
+}
+
+
