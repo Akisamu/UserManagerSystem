@@ -37,13 +37,13 @@
             <input type="password" name="password" class="form-control" id="password" placeholder="Please entry your password"/>
         </div>
 
-        <div class="form-inline" id="cap">
-            <label for="vcode">verifycode ： </label>
-            <input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="Verification code" style="width: 140px;"/>
-            <a href="javascript:refreshCode();">
-                <img src="${pageContext.request.contextPath}/checkCodeServlet" id="vcode"/>
-            </a>
-        </div>
+<%--        <div class="form-inline" id="cap">--%>
+<%--            <label for="vcode">verifycode ： </label>--%>
+<%--            <input type="text" name="verifycode" class="form-control" id="verifycode" placeholder="Verification code" style="width: 140px;"/>--%>
+<%--            <a href="javascript:refreshCode();">--%>
+<%--                <img src="${pageContext.request.contextPath}/checkCodeServlet" id="vcode"/>--%>
+<%--            </a>--%>
+<%--        </div>--%>
         <hr/>
         <div class="form-group" id="button-group">
             <input class="btn btn-default" type="submit" value="Sign in">

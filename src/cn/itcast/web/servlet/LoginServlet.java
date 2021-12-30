@@ -24,23 +24,9 @@ public class LoginServlet extends HttpServlet {
         //1.设置编码
         request.setCharacterEncoding("utf-8");
 
-        //2.获取数据
-        //2.1获取用户填写验证码
-        String verifycode = request.getParameter("verifycode");
 
-        //3.验证码校验
         HttpSession session = request.getSession();
-        String checkcode_server = (String) session.getAttribute("CHECKCODE_SERVER");
-        session.removeAttribute("CHECKCODE_SERVER");//确保验证码一次性
-        if(!checkcode_server.equalsIgnoreCase(verifycode)){
-            //验证码不正确
-            //提示信息
-            request.setAttribute("login_msg","验证码错误！");
-            //跳转登录页面
-            request.getRequestDispatcher("/login.jsp").forward(request,response);
 
-            return;
-        }
 
         Map<String, String[]> map = request.getParameterMap();
         //4.封装User对象
