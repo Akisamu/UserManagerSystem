@@ -1,0 +1,9 @@
+#button-group {
+    margin-top: 25px;
+}
+#button-group #back {
+    margin-top: 16px;
+}
+#button-group input {
+    width: 100%;
+}

@@ -18,11 +18,6 @@ public class StudentServiceImpl implements StudentService {
         return dao.findAll();
     }
 
-   // @Override
-    //public Student login(Student student) {
-       // return dao.findUserByUsernameAndPassword(student.getUsername(), student.getPassword());
-    //}
-
     @Override
     public void addUser(Student student) {
         dao.add(student);

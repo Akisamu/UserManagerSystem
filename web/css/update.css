@@ -1,0 +1,12 @@
+h3 {
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.info {
+    margin-bottom: 30px;
+}

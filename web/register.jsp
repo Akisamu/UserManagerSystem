@@ -1,26 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<!-- HTML5文档-->
 <!DOCTYPE html>
-<!-- 网页使用的语言 -->
 <html lang="zh-CN">
 <head>
-    <!-- 指定字符集 -->
-    <meta charset="utf-8">
-    <!-- 使用Edge最新的浏览器的渲染方式 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- viewport视口：网页可以根据设置的宽度自动进行适配，在浏览器的内部虚拟一个容器，容器的宽度与设备的宽度相同。
-    width: 默认宽度与设备的宽度相同
-    initial-scale: 初始的缩放比，为1:1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>注册用户</title>
 
-    <!-- 1. 导入CSS的全局样式 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Register</title>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- 2. jQuery导入，建议使用1.9以上的版本 -->
+    <link href="css/register.css" rel="stylesheet">
     <script src="js/jquery-2.1.0.min.js"></script>
-    <!-- 3. 导入bootstrap的js文件 -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/common.js"></script>
     <script>
@@ -90,31 +81,34 @@
 </head>
 <body>
 <div class="container">
-    <center><h3>注册页面</h3></center>
+    <center><h3>Register</h3></center>
     <form id="registerForm" name="registerForm" action="${pageContext.request.contextPath}/registerUserServlet" method="post">
         <div class="form-group">
-            <label for="username">姓名：</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="请输入姓名">
+            <label for="username">Name：</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Please entry your name">
         </div>
 
 
 
         <div class="form-group">
-            <label for="password">密码：</label>
-            <input type="text" class="form-control" id="password" name="password" placeholder="请输入密码">
+            <label for="password">Password：</label>
+            <input type="text" class="form-control" id="password" name="password" placeholder="Please set your password">
             <span id="tishi2"></span>
         </div>
 
 
-        <div class="form-group">
-            <label for="pwd">确认密码：</label>
-            <input type="text" class="form-control" id="pwd" name="pwd" placeholder="请输入确认密码"/>
+        <div class="form-group" style="margin-bottom: 25px">
+            <label for="pwd">Password again：</label>
+            <input type="text" class="form-control" id="pwd" name="pwd" placeholder="please entry your password again"/>
             <span id="tishi"></span>
         </div>
 
-        <div class="form-group" style="text-align: center">
-            <input class="btn btn-primary" type="submit" value="提交" />
-            <input class="btn btn-default" id="back" type="button" value="返回" />
+        <hr>
+
+        <div class="form-group" style="text-align: center" id="button-group">
+            <input class="btn btn-success" type="submit" value="Submit" />
+            <br>
+            <input class="btn btn-default" id="back" type="button" value="Back"/>
         </div>
     </form>
 </div>
