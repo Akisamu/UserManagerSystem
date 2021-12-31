@@ -20,9 +20,9 @@ CREATE TABLE `student` (
 -- ----------------------------
 -- Records of student
 -- ----------------------------
-INSERT INTO `student` VALUES ('1', '程晨', '男', '20', '河南', '2710026312', '2710026312@qq.com');
-INSERT INTO `student` VALUES ('2', '邱智涵', '男', '20', '四川', '331927834', 'akisamu0901@gmail.com');
-INSERT INTO `student` VALUES ('4', '王伟', '男', '20', '江西', '1442599586', '1442599586@qq.com');
+INSERT INTO `student` VALUES ('1', 'CC', '男', '20', '河南', '2710026312', '12345678@qq.com');
+INSERT INTO `student` VALUES ('2', 'QZH', '男', '20', '四川', '331927834', 'akisamu0901@gmail.com');
+INSERT INTO `student` VALUES ('4', 'WW', '男', '20', '江西', '1442599586', '12345678@qq.com');
 
 -- ----------------------------
 -- Table structure for user
