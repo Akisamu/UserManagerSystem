@@ -91,7 +91,7 @@ public class StudentDaoImpl implements StudentDao {
         String sql = "select * from student  where 1 = 1 ";
 
         StringBuilder sb = new StringBuilder(sql);
-        //2.遍历map
+        // 遍历map
         Set<String> keySet = condition.keySet();
         //定义参数的集合
         List<Object> params = new ArrayList<Object>();

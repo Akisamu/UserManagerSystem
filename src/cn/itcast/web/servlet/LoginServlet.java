@@ -21,7 +21,7 @@ import java.util.Map;
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //1.设置编码
+        // 设置编码
         request.setCharacterEncoding("utf-8");
 
 
@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 
 
         Map<String, String[]> map = request.getParameterMap();
-        //4.封装User对象
+        // 封装User对象
         User user = new User();
         try {
             BeanUtils.populate(user,map);
@@ -40,10 +40,10 @@ public class LoginServlet extends HttpServlet {
         }
 
 
-        //5.调用Service查询
+        // 调用Service查询
         UserService service = new UserServiceImpl();
         User loginStudent = service.login(user);
-        //6.判断是否登录成功
+        // 判断是否登录成功
         if(loginStudent != null){
             //登录成功
             //将用户存入session
@@ -58,9 +58,6 @@ public class LoginServlet extends HttpServlet {
             request.getRequestDispatcher("/login.jsp").forward(request,response);
 
         }
-
-
-
 
     }
 
